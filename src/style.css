@@ -1,0 +1,14 @@
+div {
+  background-color: aqua;
+}
+.content {
+  color: rgb(255, 0, 179);
+}
+#app {
+  text-align: center;
+  font-size: 25px;
+}
+.content input {
+  margin-left: 12px;
+  background-color: transparent;
+}
