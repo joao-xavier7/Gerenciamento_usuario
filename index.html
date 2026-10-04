@@ -1,28 +1,49 @@
 <!doctype html>
 <html lang="pt">
-  <head>
 
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="src/style.css"/> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gerenciamento de Usuários</title>
-  </head>
-  <body>
-    <div id="app" class="content">
-      ola joao pedro
-      <input id="input1"/>
-      <button id="btn1">print</button>
+<head>
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link rel="stylesheet" href="src/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciamento de Usuários</title>
+</head>
+
+<body>
+  <h1 class="titulo">Formulário</h1>
+  <form id="app">
+
+    <div class="pergunta">
+      <label for="input1">Nome</label>
+
+      <input id="input1" name="nome"/>
     </div>
-    <div id="result"></div>
-    <div  class="content">
-      ola lucas
-      <input/>
+    <div class="pergunta">
+      <label for="email"> E mail</label>
+      <input id="email" type="email" name="email" />
     </div>
-    <div>
-      ola rafael
-      <input/>
+    <div class="pergunta">
+      <input value="masculino" id="masculino" type="radio" name="sexo" />
+      <label for="masculino"> Masculino</label>
+      <input value="feminino" id="feminino" type="radio" name="sexo" />
+      <label for="feminino"> Feminino</label>
+
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <div class="pergunta">
+      <label for="data">Data de nascimento</label>
+
+      <input id="data" type="date" name="data" />
+    </div>
+    <div class="pergunta">
+      <label for="senha">Senha</label>
+
+      <input id="senha" type="password" name="senha"/>
+    </div>
+  </form>
+  <button id="btn-cadastrar">Cadastrar</button>
+  <div id="result"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
